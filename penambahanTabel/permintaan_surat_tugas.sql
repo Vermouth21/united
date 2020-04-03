@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 02, 2020 at 05:37 PM
+-- Generation Time: Apr 03, 2020 at 06:00 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -68,7 +68,7 @@ CREATE TABLE `permintaan_surat_tugas` (
 --
 
 INSERT INTO `permintaan_surat_tugas` (`id_pst`, `id_karyawan`, `golongan`, `jabatan`, `divisi`, `perusahaan_tujuan`, `keperluan_dinas`, `beban`, `serial_number`, `daerah_tujuan`, `tanggal_berangkat`, `tanggal_kembali`, `jumlah_hari`, `transportasi`, `penginapan`, `job_pekerjaan`, `total_hardsite`, `pemohon`, `depth`, `adh`, `tiketbyadm`, `tiket`, `airporttax`, `taxi`, `tol`, `hotel`, `upd`, `fiskal`, `bbm`, `lainlain`, `total_estimasi`, `uang_diizinkan`) VALUES
-(6, 7, 'A', 'Kepala Bidang', 'CabangGA', 'Padang', 'Kerja  Sama', '12', '354541', 'Padag', '2020-03-24', '2020-03-24', 12, 'Mobil', 'Wisma', 'Kelompok', 400000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 300000, 0, 700000, 400000),
+(6, 25, 'A', 'Kepala Bidang', 'CabangGA', 'Padang', 'Kerja  Sama', '12', '354541', 'Padag', '2020-03-24', '2020-03-24', 12, 'Mobil', 'Wisma', 'Kelompok', 400000, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 300000, 0, 700000, 400000),
 (8, 6, 'A', 'Karyawan GA', 'utaman GA', 'Mediatama', 'Kerjasama', '12', 'Sr90079', 'Padang', '2020-03-24', '2020-03-26', 12, '400000', 'wisma', 'paadang', 300000, 1, 1, 1, 100000, 0, 0, 0, 0, 0, 0, 0, 500000, 0, 4000000, 5000000),
 (9, 25, 'A', 'Kepala Bidang', 'utamaGA', 'Sari Roti', 'Penggusuran', '2000', 'Sr8978', 'Padang', '2020-03-24', '2020-03-26', 3, '400000', 'Hotel', 'kerjasama', 30000, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 300000, 0, 5000000, 4000000),
 (13, 5, 'Mollitia ducimus au', 'Id ipsum mollitia m', 'Fugiat harum sed co', 'Laudantium perferen', 'Perferendis aut dolo', 'Exercitation nisi om', '797', 'Exercitationem sit n', '2002-08-08', '1975-06-18', 55, 'Officiis consectetur', 'Sint enim voluptatem', 'Voluptas voluptate e', 61, 1, 1, 1, 65, 89, 40, 7, 63, 80, 91, 51, 19, 50, 9, 36);
