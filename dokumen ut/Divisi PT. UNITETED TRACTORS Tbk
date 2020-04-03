@@ -1,0 +1,70 @@
+Divisi PT. UNITETED TRACTORS Tbk
+1.PST (Bg Reyhan)
+A.ADM
+	*Peminjaman Kendaraan perusahaan Operasional
+	  -Pemohon->ADM Dept Head->scuity
+    *Permintaan Solar
+	  -Pemohon->ADM Dept Head
+	*Surat Izin Keluar
+	  -Pemohon->Adm Dept Head -Scuity
+
+B. Service
+	tahapan Permohonan service
+	 *Peminjaman Kendaraan perusahaan Operasional
+	 	-Pemohon->ADM Dept Head-> Service Dept Head -> Scurity
+	 *Permintaan Solar
+	 	-Pemohon->ADM Dept Head-> Service Dept Head
+	 *Surat Izin Keluar
+	    -Pemohon->Adm Dept Head -> Service Dept Head->scuity
+
+ C. Spare part
+ *Peminjaman Kendaraan perusahaan Operasional
+ 	-Pemohon->ADM Dept Head-> Part Dept Head -> Scurity
+ *Permintaan Solar
+	-Pemohon->ADM Dept Head
+ *Surat Izin Keluar
+	-Pemohon->Adm Dept Head-> Part Dept Head->scurity
+
+
+	2. Safety (Bg Adit)
+	*Report pertemuan LK 3
+	 	-Sesuai FORM (Status Open/Close), Untuk limit Penyelesaian dibuatkan Limit Pengerjaan.
+
+
+
+	3. */Bagian HC (Kak vany)
+		*Surat Permohonan Cuti Karyawan
+		  Cuti kariawan dibagi 2 (Untuk Keperluan):
+		  	 1. Cuti Besar
+		  	 2. Cuti Tahunan 
+		  	 -Tanggal ditentukan Karyawan dikonfirmasi Kepala dept,divisi cabang
+		  	  Selain Adm
+		  	 -Pemohon-> Dept Head/Devisi -> ADH
+
+		 * Fasilitas Pengobatan
+			 Adm
+		  -Pemohon-> ADH
+		  Selain Adm
+		  	 -Pemohon-> Perdivisi -> ADH
+
+	   */Bagian Kasir (Kak Fany)
+		   -Pemohon->Dept Head/Devisi -> ADH
+		   NB: Upload 6
+
+
+	 4. Sekretaris(kak bunga)
+
+	 -Pemohon-> Sekretaris-> ADH -> Sekretaris
+	   * Untuk Harga  
+
+	   . Invoice 
+	   		- Register Tagihan vendor
+	   		
+
+
+
+
+
+
+
+
