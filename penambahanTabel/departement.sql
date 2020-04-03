@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 01, 2020 at 02:27 PM
+-- Generation Time: Apr 03, 2020 at 06:00 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -38,6 +38,7 @@ CREATE TABLE `departement` (
 --
 
 INSERT INTO `departement` (`id_departement`, `nama_departement`) VALUES
+(1, 'ADH'),
 (2, 'GA'),
 (3, 'Casier'),
 (4, 'Sekretaris'),
@@ -61,7 +62,7 @@ ALTER TABLE `departement`
 -- AUTO_INCREMENT for table `departement`
 --
 ALTER TABLE `departement`
-  MODIFY `id_departement` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_departement` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

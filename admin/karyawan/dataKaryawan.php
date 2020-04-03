@@ -78,16 +78,19 @@
                     <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                        <label for="">Nama Lengkap</label>
-                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nama_karyawan">
+                        <label for="">NRP</label>
+                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nrp" id="nrpkrr">
+                            <span id="cek_nrp"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                        <label for="">NRP</label>
-                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nrp">
+                        <label for="">Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nama_karyawan" id="nama_karyawan">
                         </div>
                     </div>
+              
+                   
                     <div class="col-md-6">
                         <div class="form-group">
                         <label for="">Departement</label>
@@ -207,14 +210,14 @@
                     <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                        <label for="">Nama Lengkap</label>
-                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nama_karyawan">
+                        <label for="">NRP</label>
+                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nrp">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                        <label for="">NRP</label>
-                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nrp">
+                        <label for="">Nama Lengkap</label>
+                            <input type="text" class="form-control" placeholder="Tap untuk mengetik" required name="nama_karyawan">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -354,7 +357,7 @@ if(isset($_POST["btnTambahKaryawan"])) {
  
  $.ajax({
      type: "POST",
-     data: 'id=' + values,
+     data: 'id=' + values+'&aksi=ajx_edd',
      url: "karyawan/ajx.php",
      dataType: 'json',
      success: function (request) {

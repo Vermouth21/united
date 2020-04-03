@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 01, 2020 at 02:28 PM
+-- Generation Time: Apr 03, 2020 at 06:00 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -38,6 +38,7 @@ CREATE TABLE `level` (
 --
 
 INSERT INTO `level` (`id_level`, `nama_level`) VALUES
+(1, 'ADH'),
 (2, 'Dept Head'),
 (3, 'Karyawan Umum');
 
@@ -59,7 +60,7 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT for table `level`
 --
 ALTER TABLE `level`
-  MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

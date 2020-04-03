@@ -90,10 +90,40 @@
      }
   });
 
+  //@rafisahendra - Untuk hilangkan pesan cek
+  $('#nrpkrr').on('keyup', function (){
+      $('#cek_nrp').html('')
+    });
+   
+
+  //@rafisahendra - Untuk cek nrp karyawan
+  $('#nama_karyawan').on('keydown', function (){
+   
+   var nrp = $('#nrpkrr').val();
+    $.ajax({
+          url: 'permintaan/aksiSurat/ajx.php',
+          type:'POST',
+          data: 'nrp=' + nrp+'&aksi=ajx_krr',
+          dataType:'json',
+          success: function (data) {
+            var nrp_db = data[0].nrp;
+            var nama = data[0].nama_karyawan;
+          
+        if(nrp_db > 1){
+            $('#cek_nrp').html(`
+            <i class="text-red">NRP sudah ada :<span style="color:#000">`+ nrp_db +` | `+nama+`</span> </i>
+            `);
+        }
+           
+          }
+    })
+   
+});
+
+
   });
 
 function reset(){
-
       $("#jumlah-form").val("1"); // Ubah kembali value jumlah form menjadi 1
 }
 window.onload = reset();

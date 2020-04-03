@@ -181,7 +181,7 @@
             </li>
           </ul>
         </li>
-        <?php if( $_COOKIE['id_karyawan'] == 1):?>
+        <?php if( $_COOKIE['id_level'] == 191):?>
         <li class="nav-item">
           <a href="?page=karyawan/dataKaryawan" class="nav-link">
             <i class="nav-icon fa fa-users"></i>

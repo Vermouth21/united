@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 02, 2020 at 04:29 PM
+-- Generation Time: Apr 03, 2020 at 06:00 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -53,7 +53,7 @@ CREATE TABLE `karyawan` (
 --
 
 INSERT INTO `karyawan` (`id_karyawan`, `id_departement`, `id_level`, `nrp`, `nama_karyawan`, `tempat_lahir`, `tanggal_lahir`, `pekerjaan`, `agama`, `jenis_kelamin`, `golongan_darah`, `notelp`, `alamat`, `email`, `password`, `password_view`, `foto_karyawan`) VALUES
-(1, 0, 0, '1234', 'administrator', '-', '2020-02-26', '-', '-', '-', '-', '-', '-', 'admin@admin.com', '$2y$10$UP/oGuIh16r7Akp/rFYcluSdW4voeSt4St6twfTVt01zcZNZx9tiO', '12345678', ''),
+(1, 0, 191, '1234', 'administrator', '-', '2020-02-26', '-', '-', '-', '-', '-', '-', 'admin@admin.com', '$2y$10$UP/oGuIh16r7Akp/rFYcluSdW4voeSt4St6twfTVt01zcZNZx9tiO', '12345678', ''),
 (4, 2, 2, '2730', 'Rafi sahendra', 'Bukit Gading', '2020-04-16', 'Manager Ga', 'Islam', 'laki-laki', 'A', '085363229539', 'Padang Canduah, Pasaman Barat', 'rafisahendra@gmail.com', '$2y$10$L9Vu2bH/l4tB2UumVLgqZONHWY41eoi7hKerDZj2sSCDdYP/ivQ3q', '12345678', '5e85a04cbd685_mac.png'),
 (5, 3, 2, '3730', 'Gema Fajar', 'Lumin', '2020-04-01', 'Bagian Casier', 'Islam', 'laki-laki', 'B', '085363229539', 'Padang, Lubuk Minturun', 'gemafajar@gmail.com', '$2y$10$fyUZ9StShqtCs7Ei0epNHuameqF7AiVCEoRmF8dIls9yq1aZHYPw6', '12345678', '7961e8fc887e2b193b1a52776dba30f3-d2i8426.jpg'),
 (6, 4, 2, '4730', 'Restio afrinza', 'Padang', '2020-04-14', 'Casier UT', 'Islam', 'laki-laki', 'O', '085363229539', 'Padang', 'restioafrinza@gmail.com', '$2y$10$6DfwS.jYQ2G6.59Wx7tbb.IZYASPFlU8UX5u7UFcHt3Ricri9Ztma', '12345678', ''),
