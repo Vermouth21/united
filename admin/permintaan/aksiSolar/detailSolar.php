@@ -1,3 +1,7 @@
+<?php
+$id = $_GET['id'];
+$data = $con->query("SELECT b.id_karyawan,b.nama_karyawan,c.nama_departement, a.* FROM permintaan_solar a LEFT JOIN karyawan b ON a.id_karyawan=b.id_karyawan LEFT JOIN departement c ON b.id_departement=c.id_departement WHERE id_permintaan_solar='$id'")->fetch_assoc();
+?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <div class="container-fluid">
@@ -25,7 +29,7 @@
                             <div class="col-md-1 text-left">Tanggal :</div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="date" required class="form-control" name="tanggal_permintaan">
+                                    <input type="date" required class="form-control" value="<?= $data['tanggal_permintaan'] ?>">
                                 </div>
                             </div>
                         </div>
@@ -37,7 +41,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group">
-                                    <input type="text" readonly class="form-control" value="<?= $_SESSION['nama'] ?>" 
+                                    <input type="text" readonly class="form-control" value="<?= $data['nama_karyawan'] ?>" 
                                         name="nama_karyawan">
                                 </div>
                             </div>
@@ -47,7 +51,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group">
-                                    <input type="text" id="department" class="form-control" placeholder="department" required name="departement">
+                                    <input type="text" id="department" class="form-control" value="<?= $data['nama_departement'] ?>" required name="departement">
                                 </div>
                             </div>
 
@@ -56,7 +60,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group">
-                                    <input type="number" required class="form-control" placeholder="Masukan Jumlah Solar"
+                                    <input type="number" required class="form-control" value="<?= $data['jumlah_solar'] ?>"
                                         name="jumlah_solar">
                                 </div>
                             </div>
@@ -66,7 +70,7 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="form-group">
-                                    <textarea class="ckeditor" required id="ckedtor" name="keperluan_solar"></textarea>
+                                    <textarea class="ckeditor" required id="ckedtor" name="keperluan_solar"><?= $data['keperluan_solar'] ?></textarea>
                                 </div>
                             </div>
                         </div>

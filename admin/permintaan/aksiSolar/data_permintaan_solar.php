@@ -55,11 +55,17 @@ $data = $con->query("SELECT a.id_karyawan,a.nama_karyawan,b.*,c.nama_departement
                                             <td><?= $a['jumlah_solar'] ?></td>
                                             <td><?= $a['keperluan_solar'] ?></td>
                                             <td>
-                                            <?php if($a['depth']!= 1){ ?>
+                                            <?php 
+                                                if($a['depth']!= 1){
+                                                    if($_COOKIE['id_departement'] == 6){
+                                            ?>
                                                 <center>
                                                     <button type="button" data-toggle="modal" data-target="#depthAcc"
                                                     class="btn btn-warning btn-sm"><i class="fa fa-check">Acc</i></button>
                                                 </center>
+                                                <?php }else{ ?>
+                                                    <center><i style="color:red">Pending</i></center>
+                                                <?php } ?>
                                             <?php }else{ ?>
                                                 <center>
                                                     <button type="button" class="btn btn-success btn-sm"><i class="fa fa-check">Success</i></button>
@@ -67,10 +73,16 @@ $data = $con->query("SELECT a.id_karyawan,a.nama_karyawan,b.*,c.nama_departement
                                             <?php } ?>
                                             </td>
                                             <td>
-                                            <?php if($a['Adh']!= 1){ ?>
+                                            <?php 
+                                                if($a['Adh']!= 1){ 
+                                                    if($_COOKIE['id_departement'] == 7){
+                                            ?>
                                                 <center>
                                                     <button type="button" data-toggle="modal" data-target="#adhAcc" class="btn btn-warning btn-sm"><i class="fa fa-check">Acc</i></button>
                                                 </center>
+                                            <?php }else{ ?>
+                                                <center><i style="color:red">Pending</i></center>
+                                            <?php } ?>
                                             <?php }else{ ?>
                                                 <center>
                                                     <button type="button" class="btn btn-success btn-sm"><i class="fa fa-check">Success</i></button>
@@ -78,7 +90,7 @@ $data = $con->query("SELECT a.id_karyawan,a.nama_karyawan,b.*,c.nama_departement
                                             <?php } ?>
                                             </td>
                                             <td class="text-center">
-                                                <a href="?page=permintaan/aksiSolar/detailSolar" class="btn btn-danger btn-sm" style="color:#fff">Detail</a>
+                                                <a href="?page=permintaan/aksiSolar/detailSolar&id=<?= $_GET['id'] ?>" class="btn btn-danger btn-sm" style="color:#fff">Detail</a>
                                                <!--  <a href="" class="btn btn-info btn-sm" style="color:#fff">Edit</a> -->
                                                 <!-- <a href="" class="btn btn-warning btn-sm" style="color:#fff">Delete</a> -->
                                             </td>

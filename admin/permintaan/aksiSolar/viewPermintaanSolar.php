@@ -1,5 +1,5 @@
 <?php
-$data = $con->query("SELECT a.id_karyawan,a.nama_karyawan,b.* FROM karyawan a LEFT JOIN permintaan_solar b ON a.id_karyawan=b.id_karyawan ORDER BY b.tanggal_permintaan DESC");
+$data = $con->query("SELECT b.id_karyawan,b.nama_karyawan,a.* FROM permintaan_solar a LEFT JOIN karyawan b ON a.id_karyawan=b.id_karyawan ORDER BY a.tanggal_permintaan DESC");
 ?>
 <section class="content-header">
     <div class="container-fluid">
@@ -26,7 +26,23 @@ $data = $con->query("SELECT a.id_karyawan,a.nama_karyawan,b.* FROM karyawan a LE
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-header card-info">
-                                    <i><b>Pemohon :</b>&nbsp;<?= $a['nama_karyawan'] ?></i>
+                                    <i>
+                                        <b>Pemohon :</b>&nbsp;<?= $a['nama_karyawan'] ?>
+                                        <p>
+                                            <?php
+                                                if($a['depth'] != 0 AND $a['Adh'] != 0)
+                                                {
+                                            ?>
+                                            <i style="color:green">Success</i>
+                                            <?php
+                                                }else{
+                                            ?>
+                                            <i style="color:red">Pending</i>
+                                            <?php
+                                                }
+                                            ?>
+                                        </p>
+                                    </i>
                                 </div>
                                 <div class="card-body">
                                     <table class="table table-hover table-borderless">
